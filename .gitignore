@@ -1,0 +1,30 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.db
+*.db-shm
+*.db-wal
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.*.local
+
+# Uploads (user content — not in repo)
+CityexamappLLL/wwwroot/maps/
+CityexamappLLL/wwwroot/signs/
+CityexamappLLL/wwwroot/city-photos/
+CityexamappLLL/wwwroot/sign-library/
+CityexamappLLL/wwwroot/location-photos/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Rider / VS
+.idea/
+*.sln.DotSettings.user
