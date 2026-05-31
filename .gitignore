@@ -28,3 +28,6 @@ Thumbs.db
 # Rider / VS
 .idea/
 *.sln.DotSettings.user
+
+# Claude Code local settings
+.claude/
