@@ -14,17 +14,20 @@ namespace CityexamappLLL.Migrations
                 name: "RouteQuestions",
                 columns: table => new
                 {
-                    Id            = table.Column<int>(type: "INTEGER", nullable: false)
+                    Id               = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    CityId        = table.Column<int>(type: "INTEGER", nullable: false),
-                    RouteId       = table.Column<int>(type: "INTEGER", nullable: false),
-                    Scenario      = table.Column<string>(type: "TEXT", nullable: false),
-                    Question      = table.Column<string>(type: "TEXT", nullable: false),
-                    AnswerA       = table.Column<string>(type: "TEXT", nullable: false),
-                    AnswerB       = table.Column<string>(type: "TEXT", nullable: false),
-                    AnswerC       = table.Column<string>(type: "TEXT", nullable: false),
-                    CorrectAnswer = table.Column<string>(type: "TEXT", nullable: false),
-                    Explanation   = table.Column<string>(type: "TEXT", nullable: false),
+                    CityId           = table.Column<int>(type: "INTEGER", nullable: false),
+                    RouteId          = table.Column<int>(type: "INTEGER", nullable: false),
+                    Scenario         = table.Column<string>(type: "TEXT", nullable: false),
+                    Question         = table.Column<string>(type: "TEXT", nullable: false),
+                    AnswerA          = table.Column<string>(type: "TEXT", nullable: false),
+                    AnswerB          = table.Column<string>(type: "TEXT", nullable: false),
+                    AnswerC          = table.Column<string>(type: "TEXT", nullable: false),
+                    CorrectAnswer    = table.Column<string>(type: "TEXT", nullable: false),
+                    Explanation      = table.Column<string>(type: "TEXT", nullable: false),
+                    LocationPhotoUrl = table.Column<string>(type: "TEXT", nullable: true),
+                    MarkerX          = table.Column<double>(type: "REAL", nullable: false, defaultValue: 50.0),
+                    MarkerY          = table.Column<double>(type: "REAL", nullable: false, defaultValue: 50.0),
                 },
                 constraints: table =>
                 {
